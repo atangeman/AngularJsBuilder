@@ -31,10 +31,6 @@ and downloads common angularjs and bootstrap src js to the ./assets/lib/ directo
 * angular-route.min.js             
 * angular-sanitize.js             
 * angular-sanitize.min.js               
-
-## Building Base Working Directories
-
-Generating base working directories is performed using the _setup.sh script.
  
 ### Build in same working directory
  
