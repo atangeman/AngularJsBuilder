@@ -43,13 +43,15 @@ directory:
 
 
 ## Building Base Working Directories
+
+Generating base working directories is performed using the _setup.sh script.
  
-### To build in same working directory
+### Build in same working directory
  
  ``` sh
  .build/_setup.sh ./
 ```
-### To build in alternate directory
+### Build in alternate directory
 
  ``` sh
  .build/_setup.sh ~/{PATH_TO_DIR}
@@ -57,7 +59,9 @@ directory:
 
 ## Generating Default AngularJs files
 
-### How to Generate defaultController.js File
+Generating default angularJs files can be performed using the generatejs.sh script
+
+### Generating defaultController.js File
 
  ``` sh
  .build/generatejs.sh -c ./defaultController
@@ -103,7 +107,7 @@ directory:
 })();
 ```
 
-### How to Generate defaultService.js File
+### Generating defaultService.js File
 
  ``` sh
  .build/generatejs.sh -s ./defaultService
@@ -135,7 +139,7 @@ directory:
 })();
 ```
 
-### How to Generate defaultDirective.js File
+### Generating defaultDirective.js File
 
  ``` sh
  .build/generatejs.sh -d ./defaultDirective
