@@ -60,7 +60,7 @@ directory:
 * Directives (-d)
 * Services (-s)
 
-## Generating a Controller:
+### Generating a Controller:
 
  ``` sh
  .build/generatejs.sh -c ./defaultController
@@ -106,7 +106,7 @@ Sample Output:
 })();
 ```
 
-## Generating a Service:
+### Generating a Service:
 
  ``` sh
  .build/generatejs.sh -s ./defaultService
@@ -138,7 +138,7 @@ Sample Output:
 })();
 ```
 
-## Generating a Directive
+### Generating a Directive
 
  ``` sh
  .build/generatejs.sh -d ./defaultDirective
