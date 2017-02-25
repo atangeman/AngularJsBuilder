@@ -1,4 +1,4 @@
-# AngularJs Builder
+## AngularJs Builder
 
 Build your standard and stick to it!
 
