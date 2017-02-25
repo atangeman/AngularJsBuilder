@@ -11,17 +11,17 @@ directory standard, or use as is.
 Templated classes and working directories are built using standards 
 outlined in [The Angular 1 Style Guide](https://github.com/johnpapa/angular-styleguide/tree/master/a1/README.md). 
 
-## How it Works
+# How it Works
 
 The /.build directory contains all of the default scripts to setup your working directory, and 
 also generate common angularjs files on demand. 
 
-### _setup.sh
+## _setup.sh
 
 This script uses simple bash commands to setup the working directory, generate default js files
 and downloads common angularjs and bootstrap src js to the ./assets/lib/ directory.
 
-#### Libs Downloaded to ./assets/lib/:
+### Libs Downloaded to ./assets/lib/:
 
 * angular.js                                     
 * angular.min.js                                  
@@ -31,16 +31,6 @@ and downloads common angularjs and bootstrap src js to the ./assets/lib/ directo
 * angular-route.min.js             
 * angular-sanitize.js             
 * angular-sanitize.min.js               
-
-### generatejs.sh
-
-This script will automatically generate the following default angular js files to a prespecified 
-directory:
-
-* Controllers (-c)
-* Directives (-d)
-* Services (-s)
-
 
 ## Building Base Working Directories
 
@@ -57,9 +47,14 @@ Generating base working directories is performed using the _setup.sh script.
  .build/_setup.sh ~/{PATH_TO_DIR}
 ```
 
-## Generating Default AngularJs files
+## generatejs.sh
 
-Generating default angularJs files can be performed using the generatejs.sh script
+This script will automatically generate the following default angular js files to a prespecified 
+directory:
+
+* Controllers (-c)
+* Directives (-d)
+* Services (-s)
 
 ### Generating defaultController.js File
 
@@ -67,7 +62,7 @@ Generating default angularJs files can be performed using the generatejs.sh scri
  .build/generatejs.sh -c ./defaultController
 ```
 
-##### Sample Output
+#### Sample Output
 
 ``` js
 /**
@@ -113,7 +108,7 @@ Generating default angularJs files can be performed using the generatejs.sh scri
  .build/generatejs.sh -s ./defaultService
 ```
 
-##### Sample Output
+#### Sample Output
 
 ``` js
 /**
@@ -145,7 +140,7 @@ Generating default angularJs files can be performed using the generatejs.sh scri
  .build/generatejs.sh -d ./defaultDirective
 ```
 
-##### Sample Output
+#### Sample Output
 
 ``` js
 /**
