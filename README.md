@@ -16,7 +16,7 @@ outlined in [The Angular 1 Style Guide](https://github.com/johnpapa/angular-styl
 The /.build directory contains all of the default scripts to setup your working directory, and 
 also generate common angularjs files on demand. 
 
-### Setup Script 
+## Setup Script 
 
 ``` 
 _setup.sh 
@@ -47,7 +47,7 @@ Building in alternate directory:
  .build/_setup.sh ~/{PATH_TO_DIR}
 ```
 
-### GenerateJs Script
+## GenerateJs Script
 
 ```
 generatejs.sh
@@ -60,13 +60,13 @@ directory:
 * Directives (-d)
 * Services (-s)
 
-#### Generating defaultController.js File:
+## Generating defaultController.js File:
 
  ``` sh
  .build/generatejs.sh -c ./defaultController
 ```
 
-Sample Output:
+### Sample Output:
 
 ``` js
 /**
@@ -106,13 +106,13 @@ Sample Output:
 })();
 ```
 
-#### Generating defaultService.js File:
+## Generating defaultService.js File:
 
  ``` sh
  .build/generatejs.sh -s ./defaultService
 ```
 
-Sample Output:
+### Sample Output:
 
 ``` js
 /**
@@ -138,13 +138,13 @@ Sample Output:
 })();
 ```
 
-#### Generating defaultDirective.js File:
+## Generating defaultDirective.js File:
 
  ``` sh
  .build/generatejs.sh -d ./defaultDirective
 ```
 
-Sample Output:
+### Sample Output:
 
 ``` js
 /**
