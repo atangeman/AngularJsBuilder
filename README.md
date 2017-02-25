@@ -29,7 +29,52 @@ and downloads common angularjs and bootstrap src js to the ./assets/lib/ directo
 
 ### generatejs.sh
 
-This script will automatically generate default angular js files to a prespecified directory. 
+This script will automatically generate the following default angular js files to a prespecified 
+directory:
+
+* Controllers (-c)
+* Directives (-d)
+* Services (-s)
+
+#### Sample Controller
+
+``` js
+/**
+ * @file
+ */
+(function () {
+
+    "use strict";
+
+    angular
+        .module('app')
+        .controller('DefaultCtrl', DefaultCtrl);
+
+    DefaultCtrl.$inject = ['defaultService', 'logger'];
+
+    function DefaultCtrl(defaultService, logger) {
+        var vm = this;
+        vm.load = load;
+        vm.data = [];
+        vm.title = 'Default';
+
+        activate();
+
+        function activate() {
+            return getData().then(function() {
+                logger.info('Activated Default View');
+            });
+        }
+
+        function getData() {
+            return defaultService.getData().then(function(data) {
+                vm.data = data;
+                return vm.data;
+            });
+        }
+    }
+})();
+```
 
 ## Standards Used
 
