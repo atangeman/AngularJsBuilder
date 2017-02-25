@@ -6,6 +6,11 @@ This repo contains a set of simple linux command-line scripts to set up working 
 and base files to AngularJs standards. You can customize these scripts to build your own working
 directory standard, or use as is.
 
+## Standards Used
+
+Templated classes and working directories are built using standards 
+outlined in [The Angular 1 Style Guide](https://github.com/johnpapa/angular-styleguide/tree/master/a1/README.md). 
+
 ## How it Works
 
 The /.build directory contains all of the default scripts to setup your working directory, and 
@@ -36,7 +41,29 @@ directory:
 * Directives (-d)
 * Services (-s)
 
-#### Sample Controller
+
+## Building Base Working Directories
+ 
+### To build in same working directory
+ 
+ ``` sh
+ .build/_setup.sh ./
+```
+### To build in alternate directory
+
+ ``` sh
+ .build/_setup.sh ~/{PATH_TO_DIR}
+```
+
+## Generating Default AngularJs files
+
+### How to Generate defaultController.js File
+
+ ``` sh
+ .build/generatejs.sh -c ./defaultController
+```
+
+##### Sample Output
 
 ``` js
 /**
@@ -76,43 +103,64 @@ directory:
 })();
 ```
 
-## Standards Used
-
-Templated classes and working directories are built using standards 
-outlined in [The Angular 1 Style Guide](https://github.com/johnpapa/angular-styleguide/tree/master/a1/README.md). 
-
-# How To
-
-## Building Base Working Directories
- 
-### To build in same working directory
- 
- ``` sh
- .build/_setup.sh ./
-```
-### To build in alternate directory
+### How to Generate defaultService.js File
 
  ``` sh
- .build/_setup.sh ~/{PATH_TO_DIR}
+ .build/generatejs.sh -s ./defaultService
 ```
 
-## Generating Default AngularJs files
+##### Sample Output
 
-### To generate controller
+``` js
+/**
+ * @file
+ */
+(function () {
 
- ``` sh
- .build/generatejs.sh -c ./defaultController
+    "use strict";
+
+    function defaultService($http, logger) {
+        var service = {
+            getData: getData
+        };
+
+        return service;
+
+        /////////////
+
+        function getData() {
+            // implementation details go here
+        }
+    }
+})();
 ```
 
-### To generate directive
+### How to Generate defaultDirective.js File
 
  ``` sh
  .build/generatejs.sh -d ./defaultDirective
 ```
 
-### To generate service
+##### Sample Output
 
- ``` sh
- .build/generatejs.sh -s ./defaultService
+``` js
+/**
+ * @file
+* @example <div default-function></div>
+ */
+(function () {
+
+    "use strict";
+
+    angular
+        .module('app')
+        .directive('defaultFunction', defaultFunction);
+
+    function defaultFunction() {
+        /* implementation details */
+    }
+
+})();
 ```
+
 
