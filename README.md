@@ -6,22 +6,22 @@ This repo contains a set of simple linux command-line scripts to set up working 
 and base files to AngularJs standards. You can customize these scripts to build your own working
 directory standard, or use as is.
 
-## Standards Used
+## Standards:
 
 Templated classes and working directories are built using standards 
 outlined in [The Angular 1 Style Guide](https://github.com/johnpapa/angular-styleguide/tree/master/a1/README.md). 
 
-# How it Works
+## How it Works
 
 The /.build directory contains all of the default scripts to setup your working directory, and 
 also generate common angularjs files on demand. 
 
-## _setup.sh
+### _setup.sh
 
 This script uses simple bash commands to setup the working directory, generate default js files
 and downloads common angularjs and bootstrap src js to the ./assets/lib/ directory.
 
-### Libs Downloaded to ./assets/lib/:
+Libs Downloaded to ./assets/lib/:
 
 * angular.js                                     
 * angular.min.js                                  
@@ -32,18 +32,18 @@ and downloads common angularjs and bootstrap src js to the ./assets/lib/ directo
 * angular-sanitize.js             
 * angular-sanitize.min.js               
  
-### Build in same working directory
+Building in same working directory:
  
  ``` sh
  .build/_setup.sh ./
 ```
-### Build in alternate directory
+Building in alternate directory:
 
  ``` sh
  .build/_setup.sh ~/{PATH_TO_DIR}
 ```
 
-## generatejs.sh
+### generatejs.sh
 
 This script will automatically generate the following default angular js files to a prespecified 
 directory:
@@ -52,13 +52,13 @@ directory:
 * Directives (-d)
 * Services (-s)
 
-### Generating defaultController.js File
+Generating defaultController.js File:
 
  ``` sh
  .build/generatejs.sh -c ./defaultController
 ```
 
-#### Sample Output
+Sample Output:
 
 ``` js
 /**
@@ -98,13 +98,13 @@ directory:
 })();
 ```
 
-### Generating defaultService.js File
+Generating defaultService.js File:
 
  ``` sh
  .build/generatejs.sh -s ./defaultService
 ```
 
-#### Sample Output
+Sample Output:
 
 ``` js
 /**
@@ -130,13 +130,13 @@ directory:
 })();
 ```
 
-### Generating defaultDirective.js File
+Generating defaultDirective.js File:
 
  ``` sh
  .build/generatejs.sh -d ./defaultDirective
 ```
 
-#### Sample Output
+Sample Output:
 
 ``` js
 /**
