@@ -1,7 +1,35 @@
 # AngularJs Builder
 
-A simple linux command-line script to set up working directories and base files to 
-AngularJs standards.
+Build your standard and stick to it.
+
+This repo contains a set of simple linux command-line scripts to set up working directories 
+and base files to AngularJs standards. You can customize these scripts to build your own working
+directory standard, or use as is.
+
+## How it Works
+
+The /.build directory contains all of the default scripts to setup your working directory, and 
+also generate common angularjs files on demand. 
+
+### _setup.sh
+
+This script uses simple bash commands to setup the working directory, generate default js files
+and downloads common angularjs and bootstrap src js to the ./assets/lib/ directory.
+
+### Libs Downloaded to ./assets/lib/
+
+ angular.js                                     
+ angular.min.js                                  
+ angular-resource.js    
+ angular-resource.min.js     
+ angular-route.js              
+ angular-route.min.js             
+ angular-sanitize.js             
+ angular-sanitize.min.js               
+
+### generatejs.sh
+
+This script will automatically generate default angular js files to a prespecified directory. 
 
 ## Standards Used
 
