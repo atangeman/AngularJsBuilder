@@ -1,6 +1,6 @@
 # AngularJs Builder
 
-A simple linux command-line script to set up working directory to 
+A simple linux command-line script to set up working directories and base files to 
 AngularJs standards.
 
 ## Standards Used
