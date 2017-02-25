@@ -52,7 +52,7 @@ directory:
 * Directives (-d)
 * Services (-s)
 
-Generating defaultController.js File:
+#### Generating defaultController.js File:
 
  ``` sh
  .build/generatejs.sh -c ./defaultController
@@ -98,7 +98,7 @@ Sample Output:
 })();
 ```
 
-Generating defaultService.js File:
+#### Generating defaultService.js File:
 
  ``` sh
  .build/generatejs.sh -s ./defaultService
@@ -130,7 +130,7 @@ Sample Output:
 })();
 ```
 
-Generating defaultDirective.js File:
+#### Generating defaultDirective.js File:
 
  ``` sh
  .build/generatejs.sh -d ./defaultDirective
