@@ -16,16 +16,16 @@ also generate common angularjs files on demand.
 This script uses simple bash commands to setup the working directory, generate default js files
 and downloads common angularjs and bootstrap src js to the ./assets/lib/ directory.
 
-### Libs Downloaded to ./assets/lib/
+#### Libs Downloaded to ./assets/lib/:
 
- angular.js                                     
- angular.min.js                                  
- angular-resource.js    
- angular-resource.min.js     
- angular-route.js              
- angular-route.min.js             
- angular-sanitize.js             
- angular-sanitize.min.js               
+⋅⋅⋅ angular.js                                     
+⋅⋅⋅ angular.min.js                                  
+⋅⋅⋅ angular-resource.js    
+⋅⋅⋅ angular-resource.min.js     
+⋅⋅⋅ angular-route.js              
+⋅⋅⋅ angular-route.min.js             
+⋅⋅⋅ angular-sanitize.js             
+⋅⋅⋅ angular-sanitize.min.js               
 
 ### generatejs.sh
 
